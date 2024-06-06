@@ -1,0 +1,137 @@
+@import "base.css";
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+
+    width: 500px;
+    max-width: 70%;
+    max-height: fit-content;
+
+    gap: 20px;
+
+    position: fixed;
+    inset: 0;
+    margin: auto;
+}
+
+.field-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.glyph-logo {
+    height: 60px;
+    align-self: center;
+}
+
+h2 {
+    align-self: center;
+    text-align: center;
+    color: var(--color-text);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+
+    background-color: color-mix(in srgb, var(--color-background-soft) 50%, transparent);
+    backdrop-filter: blur(512px);
+
+    border: var(--color-border) 2px solid;
+    border-radius: 8px;
+
+    padding: 8px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.auth-field {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    border: var(--color-border) 2px solid;
+    border-radius: 8px;
+    font-size: 1.1em;
+    height: 40px;
+    padding: 8px;
+    font-family: inherit;
+}
+
+.auth-field:focus {
+    outline: none;
+}
+
+label {
+    font-size: 1.1em;
+}
+
+.link {
+    text-decoration: none;
+    color: #CDD293;
+    text-align: center;
+}
+
+.button_filled {
+    height: 40px;
+    padding: 8px;
+    font-family: inherit;
+    background-color: var(--color-primary);
+    border-radius: 8px;
+    border: var(--color-secondary) 2px solid;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%
+}
+
+.dashboard-container .header-box {
+    flex: 0 1 auto;
+}
+
+.dashboard-container .dashboard-content {
+    flex: 1 1 auto;
+    margin: 0 32px;
+}
+
+.dashboard-container .footer-box {
+    flex: 0 1 95px;
+}
+
+.back-container {
+    margin: 32px;
+    height: 32px;
+    position: fixed;
+}
+
+.back-container button {
+    background: none;
+    border: none;
+}
+
+.back-container img {
+    height: 16px;
+    width: 16px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 64px;
+    transform: translate(0, 64px);
+    height: 100%;
+}
+
+
+

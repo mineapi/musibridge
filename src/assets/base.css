@@ -1,0 +1,103 @@
+  /* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #F5EFF2;
+  --vt-c-white-soft: #f8eef3;
+  --vt-c-white-mute: #fbfbfb;
+
+  --vt-c-black: #0E090B;
+  --vt-c-black-soft: #211416;
+  --vt-c-black-mute: #302129;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-primary-light: #632C40;
+  --vt-c-secondary-light: #D97398;
+  --vt-c-accent-light: #D11F60;
+
+  --vt-c-primary-dark: #D39CB0;
+  --vt-c-secondary-dark: #8C264C;
+  --vt-c-accent-dark: #E02E6F;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: #050316;
+  --vt-c-text-light-2: #050316;
+  --vt-c-text-dark-1: #EBE9FC;
+  --vt-c-text-dark-2: #EBE9FC;
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-primary: var(--vt-c-primary-light);
+  --color-secondary: var(--vt-c-secondary-light);
+  --color-accent: var(--vt-c-accent-light);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-primary: var(--vt-c-primary-dark);
+    --color-secondary: var(--vt-c-secondary-dark);
+    --color-accent: var(--vt-c-accent-dark);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Poppins,
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
